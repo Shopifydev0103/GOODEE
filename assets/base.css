@@ -2284,6 +2284,15 @@ product-info .loading__spinner:not(.hidden) ~ *,
   letter-spacing: 0.1rem;
   min-height: 3.8rem;
 }
+.c-announcement-bar__message--font {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #212121;
+}
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
 .announcement-bar-slider--fade-in-previous .announcement-bar__message,
