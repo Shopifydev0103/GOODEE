@@ -4,16 +4,21 @@
   Accepts:
     - localPosition: pass in the position in which the form is coming up to create specific IDs
 {%- endcomment -%}
+<style>
+  .c-localization__btn--min-width {
+    min-width: min-content;
+  }
+</style>
 
 <div class="disclosure">
   <button
     type="button"
-    class="disclosure__button localization-form__select localization-selector link link--text caption-large"
+    class="c-localization__btn--min-width disclosure__button localization-form__select localization-selector link link--text caption-large"
     aria-expanded="false"
     aria-controls="{{ localPosition }}List"
     aria-describedby="{{ localPosition }}Label"
-  >
-    <span class="c-announcement__language--font">{{ localization.language.endonym_name | capitalize }}</span>
+  > 
+    <span class="c-announcement__language--font">{{ localization.language.endonym_name | slice: 0, 2 | upcase }}</span>
     {% render 'icon-caret' %}
   </button>
   <div class="disclosure__list-wrapper" hidden>
@@ -47,3 +52,6 @@
   </div>
 </div>
 <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
+
+
+
