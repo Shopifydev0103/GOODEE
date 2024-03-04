@@ -2293,6 +2293,24 @@ product-info .loading__spinner:not(.hidden) ~ *,
   text-align: center;
   color: #212121;
 }
+.c-announcement__country--font {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #212121;
+}
+.c-announcement__language--font {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #212121;
+}
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
 .announcement-bar-slider--fade-in-previous .announcement-bar__message,
