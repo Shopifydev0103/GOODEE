@@ -82,4 +82,12 @@
       </a>
     </li>
   {%- endif -%}
+  {%- if settings.social_intergram_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_intergram_link }}" class="link list-social__link">
+        {%- render 'icon-Intergram' -%}
+        <span class="visually-hidden">intergram</span>
+      </a>
+    </li>
+  {%- endif -%}
 </ul>
