@@ -1,4 +1,11 @@
 {{ 'c-header-search.css' | asset_url | stylesheet_tag }}
+<style>
+  @media (max-width: 375px) {
+    .c-search-modal__form {
+        display: none;
+    }
+}
+</style>
 
 <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form c-search-modal__form">
   <div class="field">

@@ -5,6 +5,13 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 {{ 'component-header__mega-menu.css' | asset_url | stylesheet_tag }}
+<style>
+  @media (max-width: 375px) {
+    .c-header__inline-menu {
+        display: none;
+    }
+}
+</style>
 
 <nav class="header__inline-menu c-header__inline-menu">
   <ul class="list-menu list-menu--inline c-list-menu--inline" role="list">
