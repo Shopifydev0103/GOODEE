@@ -1,0 +1,24 @@
+.c-header__inline-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F4FF;
+}
+.c-mega-menu__content {
+    display: none;
+}
+.c-header__hover-menu-item {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.c-header__hover-menu-item .mega-menu__content {
+    opacity: 1 !important;
+}
+
+.mega-menu:hover .c-mega-menu__content {
+    display: block;
+}
+.c-list-menu--inline {
+    align-items: center;
+}
