@@ -24,7 +24,7 @@
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
-
+{{ 'component-icon_att.css' | asset_url | stylesheet_tag }}
 <style>
   header-drawer {
     justify-self: start;
@@ -316,16 +316,27 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
+    
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
+      <div class="c-header__icon--account-with-cart">
+      {% render 'account-header' %}
+      <a href="{{ routes.cart_url }}" class="c-header__icon--cart-att header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        <span class="">{{ 'templates.cart.cart' | t }}</span> {% comment %} add text-> cart {% endcomment %}
+        {% comment %} {%- liquid
           if cart == empty
             render 'icon-cart-empty'
           else
             render 'icon-cart'
           endif
+        -%} {% endcomment %}
+        {%- liquid
+          if cart == empty
+            render 'icon-c-cart-empty'
+          else
+            render 'icon-c-cart'
+          endif
         -%}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        {% comment %} <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span> {% endcomment %}
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
@@ -335,6 +346,7 @@
           </div>
         {%- endif -%}
       </a>
+    </div>
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
