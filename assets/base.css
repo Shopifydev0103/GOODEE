@@ -936,6 +936,17 @@ summary::-webkit-details-marker {
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+@media (max-width: 375px) {
+  .title--71 {
+  font-family: Arial;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 1px;
+  text-align: center;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .grid {
     column-gap: var(--grid-desktop-horizontal-spacing);

@@ -5,6 +5,12 @@
   z-index: auto;
   isolation: isolate;
 }
+.c-image-banner_mobile {
+  display: none;
+}
+.c-banner-button--width {
+  min-width: 90px !important;
+}
 
 .banner__box {
   text-align: center;
@@ -13,6 +19,26 @@
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
 .banner__box.gradient {
   transform: perspective(0);
+}
+@media (max-width: 375px) {
+  .c-image-banner_mobile {
+    display: block;
+    position: relative;
+  }
+  .c-image-banner {
+    display: none;
+  }
+  .c-banner__content--mobile {
+    position: absolute !important;
+  }
+  .c-banner-total--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner__box {
+    padding: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 749px) {
