@@ -14,3 +14,6 @@
     text-align: left;
     color: #171717;
 }
+.c-header__icon--cart-underline {
+    text-decoration: none !important;
+}

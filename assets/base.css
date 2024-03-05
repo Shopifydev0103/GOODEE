@@ -72,7 +72,9 @@
 }
 
 /* base */
-
+a {
+  text-decoration: none ;
+}
 .no-js:not(html) {
   display: none !important;
 }
@@ -498,6 +500,7 @@ h6:empty {
   display: inline-block;
   border: none;
   box-shadow: none;
+  text-decoration: none !important;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
@@ -1632,7 +1635,7 @@ details[open] > .share-button__fallback {
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
   border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
+  /* box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity)); */
   transition: box-shadow var(--duration-short) ease;
   z-index: 1;
 }
@@ -2845,18 +2848,29 @@ details[open] > .header__submenu {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+.header__menu-item:hover .c-header__menu--hover-bottom {
+  /* color: rgb(var(--color-foreground)); */
+  color: #4a49fe;
+  transform: scale(1);
 }
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
 }
 
+
 .header__menu-item:hover span {
+  text-decoration: none !important;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+  color: #4a49fe;
 }
+
+span,
+a {
+  transition: color 0.5s ease;
+}
+
 
 details[open] > .header__menu-item {
   text-decoration: underline;
@@ -2875,6 +2889,9 @@ details[open] > .header__menu-item .icon-caret {
   color: rgb(var(--color-foreground));
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+}
+.c-header__active-menu-item {
+  text-decoration: none !important;
 }
 .header__menu-item:hover .header__active-menu-item {
   text-decoration-thickness: 0.2rem;

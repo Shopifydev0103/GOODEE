@@ -72,10 +72,12 @@
 .mega-menu__link--active {
   color: rgb(var(--color-foreground));
   text-decoration: underline;
+  text-decoration: none !important;
 }
 
 .mega-menu__link--active:hover {
   text-decoration-thickness: 0.2rem;
+  color: #4a49fe;
 }
 
 .mega-menu .mega-menu__list--condensed {

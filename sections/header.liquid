@@ -321,7 +321,7 @@
       <div class="c-header__icon--account-with-cart">
       {% render 'account-header' %}
       <a href="{{ routes.cart_url }}" class="c-header__icon--cart-att header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        <span class="">{{ 'templates.cart.cart' | t }}</span> {% comment %} add text-> cart {% endcomment %}
+        <span class="c-header__icon--cart-underline">{{ 'templates.cart.cart' | t }}</span> {% comment %} add text-> cart {% endcomment %}
         {% comment %} {%- liquid
           if cart == empty
             render 'icon-cart-empty'
