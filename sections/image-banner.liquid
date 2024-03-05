@@ -127,7 +127,7 @@
               {{ block.settings.heading }}
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div class="banner__text rte {{ block.settings.text_style }} {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
@@ -142,7 +142,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="c-banner-button--font button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -388,6 +388,10 @@
             {
               "value": "h0",
               "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "title--71",
+              "label": "font 71"
             }
           ],
           "default": "h1",
@@ -398,7 +402,7 @@
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "inline_richtext",
@@ -425,6 +429,34 @@
           ],
           "default": "body",
           "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "label": "Text size",
+          "options": [
+            {
+            "value": "subtitle",
+            "label": "normal"
+            },
+            {
+            "value": "subtitle--small",
+            "label": "small"
+            },
+            {
+            "value": "subtitle--medium",
+            "label": "medium"
+            },
+            {
+            "value": "subtitle--12",
+            "label": "font 12"
+            },
+            {
+            "value": "subtitle--15",
+            "label": "font 15"
+            }
+          ],
+          "default": "subtitle"
         }
       ]
     },
