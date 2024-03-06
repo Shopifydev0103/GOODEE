@@ -108,3 +108,34 @@
     justify-content: center;    
     align-items: center;
 }
+.causes-carousel__content p {
+    margin-top: 0;
+}
+
+@media (max-width: 375px) {
+    .causes-carousel__inner {
+        flex-direction: column;
+    }
+    .item {
+        padding: 0;
+        border-left: 0;
+        grid-gap: 10px;
+    }
+    .intro-wrapper img {
+        width: 100%;
+    }
+    .intro-wrapper {
+        align-items: flex-start;
+    }
+    .intro__button {
+        width: 50%;
+    }
+    .overlay-text {
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+}
