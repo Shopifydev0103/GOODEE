@@ -3,24 +3,33 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "text_aWy6Yd": {
+          "type": "text",
+          "settings": {
+            "text": "NEW IN",
+            "text_style": "body",
+            "text_size": "subtitle--12"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
             "heading": "Ezcaray",
-            "heading_size": "h0"
+            "heading_size": "title--71"
           }
         },
         "text_8hmGD7": {
           "type": "text",
           "settings": {
             "text": "Discover exclusive styles and autumn hues.",
-            "text_style": "body"
+            "text_style": "body",
+            "text_size": "subtitle--15"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop",
+            "button_label_1": "SHOP",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -30,12 +39,14 @@
         }
       },
       "block_order": [
+        "text_aWy6Yd",
         "heading",
         "text_8hmGD7",
         "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Homepage-image-banner.png",
+        "image_mobile": "shopify:\/\/shop_images\/img-banner.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -46,6 +57,73 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "c_main_question_kEkQRq": {
+      "type": "c-main-question",
+      "blocks": {
+        "content_VC4crM": {
+          "type": "content",
+          "settings": {
+            "title": "Natural Materials",
+            "text": "<p>This product has been crafted withmaterials that are derived from plants,animals, or other naturally occurringmaterials.<\/p>",
+            "button_label": "shop all",
+            "button_url": "",
+            "img": "shopify:\/\/shop_images\/cause_natural_material_png.png"
+          }
+        },
+        "content_VpNpYa": {
+          "type": "content",
+          "settings": {
+            "title": "Heritage Craft Preservation",
+            "text": "<p>This product supports the preservation ofheritage crafts and enables artisans tocreate sustainable livelihoods through theirtraditional skills<\/p>",
+            "button_label": "shop all",
+            "button_url": "",
+            "img": "shopify:\/\/shop_images\/cause_heritage_craft_preservation_png.png"
+          }
+        },
+        "content_rQTp6K": {
+          "type": "content",
+          "settings": {
+            "title": "Marginalized Communities",
+            "text": "<p>A portion of proceeds from the sale of thisproduct go towards disenfranchised groupsthat are specific to the brand’s social andcultural community.<\/p>",
+            "button_label": "shop all",
+            "button_url": "",
+            "img": "shopify:\/\/shop_images\/cause_gender_advocacy_png.png"
+          }
+        },
+        "content_gzW7kt": {
+          "type": "content",
+          "settings": {
+            "title": "Natural Materials",
+            "text": "<p>This product has been crafted withmaterials that are derived from plants,animals, or other naturally occurringmaterials.<\/p>",
+            "button_label": "shop all",
+            "button_url": "",
+            "img": "shopify:\/\/shop_images\/cause_marginalized_communities_png.png"
+          }
+        },
+        "content_LaBAp9": {
+          "type": "content",
+          "settings": {
+            "title": "Heritage Craft Preservation",
+            "text": "<p>This product supports the preservation ofheritage crafts and enables artisans tocreate sustainable livelihoods through theirtraditional skills<\/p>",
+            "button_label": "shop all",
+            "button_url": "",
+            "img": "shopify:\/\/shop_images\/cause_gender_advocacy_png.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_VC4crM",
+        "content_VpNpYa",
+        "content_rQTp6K",
+        "content_gzW7kt",
+        "content_LaBAp9"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/impact-report-EN_180x_png.png",
+        "button_label": "Read more",
+        "Button_url": ""
       }
     },
     "collection_list_w8fFVc": {
@@ -126,6 +204,7 @@
   },
   "order": [
     "image_banner",
+    "c_main_question_kEkQRq",
     "collection_list_w8fFVc",
     "featured_collection"
   ]
